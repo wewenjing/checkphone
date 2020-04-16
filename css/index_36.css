@@ -1,0 +1,30 @@
+@charset "UTF-8";
+html{
+    height:100%;
+}
+body{
+    background: url(../img/bg_detail.png) no-repeat;
+    background-size: 100% 100%;
+    font-size:.28rem;
+    color:#333;
+    padding:0 .9rem 0 .8rem;
+}
+.g_wrap{
+    text-indent:.52rem;
+   margin-top:4.22rem;
+    line-height:.48rem;
+}
+.g_time{
+    position:fixed;
+    bottom:2.5rem;
+    right:.9rem;
+}
+.g_time p{
+    text-align:right;
+    height:.28rem;
+    line-height:.28rem;
+
+}
+.g_time p.time_first{
+    margin-bottom:.3rem;
+}

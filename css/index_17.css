@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html{
+    height:100%;
+}
+body{
+    background: url(../img/bg_check.png) no-repeat top;
+    background-size: cover;
+}
+.g_wrap{
+    margin-top:3.8rem;
+    margin-left:1.44rem;
+}
+.g_wrap img{
+    width:1.82rem;
+    height:1.82rem;
+}
+.g_wrap li{
+    width:1.82rem;
+
+}
+.g_wrap li.mr_100{
+    margin-right:1rem;
+}
+
+.g_wrap div{
+    font-size:.32rem;
+    color:#fff;
+    text-align:center;
+}

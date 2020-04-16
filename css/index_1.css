@@ -1,0 +1,67 @@
+@charset "UTF-8";
+html{
+    height:100%;
+}
+body{
+    background: #19abbf url(../img/bg_login.png) no-repeat 0 -1.3rem;
+    background-size: cover;
+    color: #fff;
+    text-align:center;
+}
+p{
+    margin-top:1.8rem;
+    font-size:.48rem;
+    font-weight:bold;
+}
+
+h6{
+    font-size:.56rem;
+    letter-spacing:.27rem;
+    margin-bottom: 1.36rem;
+
+}
+input{
+    display:block;
+    border-bottom:.01rem solid #abddde;
+    width:5.5rem;
+    height:.94rem;
+    line-height:.94rem;
+    margin:0 auto .25rem;
+    background:transparent;
+    padding-left:.83rem;
+    box-sizing:border-box;
+    font-size:.28rem;
+}
+input::input-placeholder{
+    color:#b0e3e4;
+}
+input::-webkit-input-placeholder{
+    color:#b0e3e4;
+}
+input:-moz-placeholder{
+    color:#b0e3e4;
+}
+input::-moz-placeholder{
+    color:#b0e3e4;
+}
+input:-ms-input-placeholder{
+    color:#b0e3e4;
+}
+.user{
+    background:url(../img/login_user.png) no-repeat left;
+    background-size:.43rem .45rem;
+    color:#fff;
+
+}
+.psw{
+    background:url(../img/login_psw.png) no-repeat left;
+    background-size:.36rem .47rem;
+    color:#fff;
+
+}
+
+.btn_sure{
+    margin-top:.8rem;
+    background:#fff;
+    color:#4fcbcd;
+}

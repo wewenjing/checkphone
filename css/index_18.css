@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body{
+    background:#f5f5f5;
+    padding:.3rem;
+    color:#666;
+}
+.g_text{
+    box-shadow: 2px 2px 2px 0 #eee;
+    font-size:.26rem;
+    background:#fff;
+    border-radius:5px;
+    padding:0 .19rem .3rem .19rem;
+
+}
+.g_text p{
+    height:.88rem;
+    line-height:.88rem;
+    border-bottom:.01rem solid #ebebeb;
+
+
+}
+.g_text p.m_bg{
+    background:url(../img/index/index_down.png) no-repeat 6.38rem;
+    background-size: .11rem .22rem;
+}
+.g_text div{
+    padding-top:.3rem;
+    padding-bottom:.2rem;
+
+}
+.g_text textarea{
+    color:#999;
+    width:100%;
+    height:4.18rem;
+    border:.01rem solid #ebebeb;
+    border-radius:5px;
+    padding-left:.15rem;
+    padding-top:.15rem;
+    box-sizing:border-box;
+    font-size:.26rem;
+    margin-bottom:-.1rem;
+}
+.g_warn img{
+    width:.28rem;
+    height:.26rem;
+    position:relative;
+    top:-.25rem;
+}
+.g_warn{
+    padding-left:.2rem;
+    color:#ffab2e;
+    margin-top:.19rem;
+    font-size:.24rem;
+}
+.g_warn span{
+    display:inline-block;
+    width:5.96rem;
+
+}
+.g_btn{
+    margin-top:2.26rem;
+}
+
+/*举报编辑页面样式*/
+.g_text .m_company{
+    color:#666;
+    height:.88rem;
+    line-height:.88rem;
+}
+.g_text .m_company span{
+    color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

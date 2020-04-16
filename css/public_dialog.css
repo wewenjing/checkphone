@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.g_shadow{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.m_dialog{
+    width:6rem;
+    margin:2.65rem auto 0;
+    background:#efffff;
+    position:relative;
+    padding:0 .85rem 4.1rem .67rem;
+    box-sizing:border-box;
+    border-radius:5px;
+
+}
+.m_dialog img{
+    position:absolute;
+    right:-.45rem;
+    top:-.45rem;
+    width:.4rem;
+    height:.4rem;
+}
+.m_dialog p{
+    text-indent:.56rem;
+    line-height:.49rem;
+    font-size:.28rem;
+    color:#333;
+}
+.m_dialog p.mt_11{
+    margin-top:.11rem;
+}
+.m_dialog p.m_title{
+    background:url(../img/bg_jubao.png) no-repeat .7rem;
+    color:#fff;
+    font-size:.36rem;
+    text-align:center;
+    height:.76rem;
+    line-height:.76rem;
+    margin-bottom:.73rem;
+    background-size:3.48rem .76rem;
+}
+
+/*纳税人识别号页面弹出框样式*/
+.m_dialog .m_nsr{
+    font-size:.28rem;
+    color:#333;
+    margin-bottom:.3rem;
+    text-align:left;
+}
+.m_dialog input{
+    height:.78rem;
+    line-height:.78rem;
+    border:.01rem solid #ccc;
+    border-radius:5px;
+    padding-left:.2rem;
+    width: 100%;
+    box-sizing:border-box;
+    background:transparent;
+    color:#333;
+    font-size:.28rem;
+}

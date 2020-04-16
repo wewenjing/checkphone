@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    background:#f5f5f5;
+    font-size:.28rem;
+    color:#666;
+    padding:.3rem;
+}
+.g_wrap div{
+    height:.8rem;
+    line-height:.8rem;
+    margin-bottom:.2rem;
+}
+.g_wrap span{
+    display:inline-block;
+    width:1.4rem;
+    text-align:right;
+}
+.g_wrap input{
+    height:.78rem;
+    line-height:.78rem;
+    width:5.5rem;
+    padding-left:.21rem;
+    box-sizing:border-box;
+    border:.01rem solid #ccc;
+    border-radius:5px;
+    background:transparent;
+    font-size:.28rem;
+}
+
+.btn_sure{
+    margin-top:.6rem;
+}

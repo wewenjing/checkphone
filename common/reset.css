@@ -1,0 +1,247 @@
+﻿@charset "utf-8";
+/*
+reset.css重置了html元素的默认值
+前缀说明：
+.g_ grid的简写，开头的样式类或者id 表示用于布局 切记：不可在这类选择器下设置子选择器样式 污染面可能很大
+.f_ function的简写，用于设置常用的对齐方式、内外边距等等
+.m_ module的简写，用于设置自定义模块的类
+.u_ unit的简写，用于设定页面单独元素样式
+.c_ color的简写，主要用于设置颜色（包含背景颜色）
+.j_ javascript的简写，该样式类专供js调用
+.a_ animation的简写，该类设置css3动画效果
+*/
+html{font-family: sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background: none;}
+body, h1, h2, h3, h4, h5, h6, hr, dd, ul, menu, dir, dl, blockquote, figure, fieldset, ol, p{margin: 0;}
+td, th, ol, ul, menu, dir, textarea, option, input{padding: 0;}
+ul, li, dd, dt, dl{list-style: none;}
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details{display: block;}
+audio, canvas, progress, video{display: inline-block;vertical-align: baseline;}
+audio:not([controls]){display: none;height: 0;}
+[hidden], template{display: none;}
+html, body, img, iframe, abbr, hr, input, textarea, keygen, select, button{border: none;}
+table{border-collapse: collapse;border-spacing: 0;}
+caption, th{text-align: left;font-weight: normal;}
+textarea{overflow: auto;resize: none;}
+a, button{cursor: pointer;}
+input, button{overflow: visible;vertical-align: middle;outline: none}
+body{background: #fff;font: 14px/1.42875143 "Microsoft YaHei", arial, \5b8b\4f53;color: #333;}
+a, area{outline: none;}
+a{color: #333;text-decoration: none;cursor: pointer}
+a:hover, a:focus{outline: none;text-decoration: none;*zoom:1;}
+/* --------以下为显示功能公共类--------- */
+/*左右浮动*/
+.f_fl{float: left;}
+.f_fr{float: right;}
+/* 清除浮动 */
+.f_cb:after, .f_cbli li:after,.clearfix:after{content: "\20";display: block;height: 0;clear: both;visibility: hidden}
+.f_cb, .f_cbli li,.clearfix{zoom:1}
+/* 禁止选中 */
+.f_usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+/*显示方式*/
+/*隐藏*/
+.f_dn{display:none;}
+/*显示*/
+.f_db{display:block;}
+/* 以inline-block方式显示 */
+.f_ib{display:inline-block;*display:inline;*zoom:1;}
+.f_rel{
+	position: relative;
+}
+.f_pob{
+	position: absolute;
+}
+/*文本对齐方式*/
+/*	水平居左*/
+.f_tal{text-align:left;}
+/*水平居中*/
+.f_tac{text-align:center;}
+/*水平居右*/
+.f_tar{text-align:right;}
+/*两端对齐 容器需设置宽度*/
+.f_taj{text-align:justify;text-justify:distribute-all-lines;/*ie5-8*/text-align-last:justify;/* ie9*/-moz-text-align-last:justify;/*ff*/-webkit-text-align-last:justify;/*chrome 20+*/}
+/*垂直居中*/
+.f_vam,.f_vama *{vertical-align:middle;}
+/*单行文本不换行，超出显示省略号*/
+.f_toe{overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}
+/*全局设置 input 框 placeholder 属性字体颜色*/
+::-webkit-input-placeholder { /* WebKit browsers */
+color:#999;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:#999;}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:#999;}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:#999;}
+i{
+	font-style:normal;
+}
+.ellips_1{overflow: hidden; word-wrap: normal; white-space: nowrap; text-overflow: ellipsis;}
+.ellips_2{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.ellips_3{ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;}
+
+/*列表公共样式*/
+.p_title{
+	height:.8rem;
+	line-height:.8rem;
+	background:#f5f5f5;
+	font-size:.3rem;
+	color:#333;
+	font-weight:bold;
+	padding-left:.3rem;
+}
+.p_list{
+	padding-left:.3rem;
+	background:#fff;
+	border-top: .01rem solid #ebebeb;
+	border-bottom: .01rem solid #ebebeb;
+}
+.p_list li{
+	height:.88rem;
+	line-height:.88rem;
+	font-size:.28rem;
+	color:#333;
+	border-bottom:0.01rem solid #ebebeb;
+	background:url(../img/index/index_down.png) no-repeat 6.79rem;
+	padding-right:.3rem;
+	cursor:pointer;
+	background-size: .11rem .22rem;
+	box-sizing: border-box;
+}
+.p_list li img{
+	margin-right:.28rem;
+	width:.34rem;
+	height:.34rem;
+	vertical-align:middle;
+}
+.p_list li.p_psw img{
+	position: relative;
+	top: -.05rem;
+}
+
+.p_list li:last-child{
+	border-bottom:0;
+}
+
+/*按钮样式*/
+.g_btn{
+	text-align:center;
+	margin-top:.63rem;
+	margin-bottom:.6rem;
+}
+.g_btn a{
+	display:inline-block;
+	width:2.55rem;
+	height:.8rem;
+	line-height:.8rem;
+	font-size:.32rem;
+	color:#4fcbcd;
+	border:.01rem solid #4fcbcd;
+	border-radius:5px;
+}
+.g_btn a.btn_next{
+	margin-left:.4rem;
+	background:#4fcbcd;
+	color:#fff;
+}
+
+/*案件进度样式*/
+.g_panel{
+	background:#fff;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 0 #eee;
+	padding-bottom:.12rem;
+}
+.g_panel p{
+	height:.8rem;
+	line-height:.8rem;
+	font-size:.28rem;
+	color:#333;
+	border-bottom:.01rem solid #ebebeb;
+	padding:0 .2rem;
+	margin-bottom:.14rem;
+}
+.g_panel button{
+	border:.01rem solid #ffab2e;
+	color:#ffab2e;
+	height:.54rem;
+	line-height:.54rem;
+	text-align:center;
+	width:1.22rem;
+	background:#fff9f0;
+	border-radius:5px;
+	font-size:.26rem;
+	margin-top:.13rem;
+}
+.g_panel div{
+	padding:0 .2rem;
+	height:.5rem;
+	line-height:.49rem;
+	font-size:.26rem;
+	color:#666;
+}
+.g_panel span{
+	color:#333;
+}
+.g_panel i{
+	display:inline-block;
+	width:5.22rem;
+}
+/*单个大按钮样式*/
+.btn_sure{
+	display:block;
+	margin:4.78rem auto .6rem;
+	width:5.5rem;
+	height:.8rem;
+	line-height:.8rem;
+	background:#4fcbcd;
+	text-align:center;
+	color:#fff;
+	font-size:.32rem;
+	border-radius:5px;
+}
+/*取消按钮样式*/
+.btn_cancel{
+	display:block;
+	width:5.5rem;
+	height:.8rem;
+	line-height:.8rem;
+	background:transparent;
+	margin:0 auto;
+	border:.01rem solid #4fcbcd;
+	border-radius:5px;
+	text-align:center;
+	color:#4fcbcd;
+}
+
+
+/*改变jqueryweui的样式*/
+.toolbar .picker-button,.toolbar .toolbar-inner{
+	height:1rem;
+	line-height:1rem;
+}
+.toolbar{
+	line-height:1;
+}
+.toolbar .title{
+	line-height:1rem;
+}
+.toolbar, .toolbar .title{
+	font-size:.3rem;
+}
+.weui-picker-modal .picker-items{
+	font-size:.3rem;
+}
+.weui-picker-modal{
+	height:7rem;
+}
+.weui-picker-modal .picker-modal-inner{
+	height:6rem;
+}
+
+
+
+
+
+
+
+

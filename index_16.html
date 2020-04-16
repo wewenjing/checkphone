@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="flexible" content="initial-dpr=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>调查问卷填写</title>
+    <link rel="stylesheet" href="common/jquery-weui.min.css">
+    <link rel="stylesheet" href="common/weui.min.css">
+    <link rel="stylesheet" href="common/reset.css"/>
+    <link rel="stylesheet" href="css/public_fenpei.css"/>
+    <link rel="stylesheet" href="css/index_16.css"/>
+    <script type="text/javascript" src="common/jquery.min.js"></script>
+    <script type="text/javascript" src="common/jquery-weui.min.js"></script>
+    <script src="common/rem.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index_16.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+        /*改变jqueryweui的样式*/
+        .toolbar .picker-button{
+            height:1rem;
+            line-height:1rem;
+        }
+        .toolbar{
+            line-height:1;
+        }
+        .toolbar .title{
+            line-height:1rem;
+        }
+    </style>
+</head>
+<body>
+   <ul class="g_wrap">
+        <li>稽查人员 <span>高程，李阳</span></li>
+       <li class="m_date">记账时间 <img src="img/date.png" id='datetime-picker' alt=""/></li>
+   </ul>
+    <div class="g_check weui-cells weui-cells_checkbox">
+        <label class="weui-cell weui-check__label">
+            <div class="weui-cell__bd">
+                <p class="btn_fwxy">稽查人员是否下达《税务通知书》</p>
+            </div>
+            <div class="weui-cell__hd">
+                <input type="checkbox" class="weui-check" name="btn_read" checked="checked">
+                <i class="weui-icon-checked"></i>
+            </div>
+        </label>
+        <!--<p>稽查人员是否下达《税务通知书》<input type="checkbox" name="btn_read"></p>-->
+        <!--<p class="m_secend">
+            <span>稽查人员是否存在利用职权借钱借物，无偿占用贵公司的车辆或其他物品的行为</span>
+            <input type="checkbox" name="btn_read" checked="checked">
+        </p>-->
+        <label class="weui-cell weui-check__label">
+            <div class="weui-cell__bd">
+                <p class="m_secend">稽查人员是否存在利用职权借钱借物，无偿占用贵公司的车辆或其他物品的行为</p>
+            </div>
+            <div class="weui-cell__hd">
+                <input type="checkbox" class="weui-check" name="btn_read" checked="checked">
+                <i class="weui-icon-checked"></i>
+            </div>
+        </label>
+    </div>
+   <!--/*填写意见或建议*/-->
+    <div class="g_text">
+        <p>其他意见建议</p>
+        <textarea name="" id="" cols="30" rows="10">请输入您的其他意见或建议</textarea>
+    </div>
+   <ul class="g_wrap">
+       <li>纳税人名称 <span>纳税人100</span></li>
+       <li>联系人 <span>李阳</span></li>
+       <li>联系电话 <span>132****5678</span></li>
+   </ul>
+
+
+
+
+   <!--按钮样式-->
+   <a href="" class="btn_sure">
+       提交
+   </a>
+
+
+
+</body>
+</html>

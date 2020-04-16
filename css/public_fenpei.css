@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body{
+    padding:.3rem;
+    background:#f5f5f5;
+
+}
+.g_wrap{
+    padding:.34rem 0 .3rem 0;
+    font-size:.26rem;
+    color:#666;
+    background:#fff;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px 0 #eee;
+}
+.g_wrap li:first-child{
+    margin-top:0;
+}
+.g_wrap li{
+    margin:.34rem .19rem 0 .19rem;
+    height:.54rem;
+    line-height:.54rem;
+    border-bottom:.01rem solid #ebebeb;
+}
+.g_wrap span{
+    color:#333;
+    float:right;
+}
+.g_wrap img{
+    float:right;
+    width:.1rem;
+    height:.2rem;
+}
+.g_btn{
+    margin-top:5.65rem;
+}
+.m_multi img{
+    position:relative;
+    top:.18rem;
+    margin-left:.12rem;
+}
+.m_date img{
+    width:.32rem;
+    height:.29rem;
+    position:relative;
+    top:.15rem;
+    margin-left:.12rem;
+}
+.m_date input{
+    width:1.7rem;
+}
+.g_time{
+    background:#fff9f0;
+    font-size:.26rem;
+    color:#ffab2e;
+    height:.8rem;
+    line-height:.8rem;
+    padding-left:.18rem;
+    margin-top:.2rem;
+}
+.g_wrap li .mr_20{
+    margin-left:.2rem;
+}
